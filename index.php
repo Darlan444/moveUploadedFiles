@@ -1,5 +1,9 @@
+<link rel="shortcut icon" href="img/arrows.png" type="image/x-icon">
+
 <link rel="stylesheet" href="css/style.css">
+
 <script src="js/input-file.js"></script>
+
 <!-- MODAL -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
@@ -26,7 +30,6 @@
             <input type="file" name="img">
         </div>
     </label>
-
     <input href="#ex1" rel="modal:open" class="btn-enviar" type="submit" name="up-arq" id="file" value="ENVIAR">
 </form>
 
