@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Overpass', sans-serif;
+}
+body{
+    background-color: #222222;
+}
+
+.form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.btn-enviar{
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba(0,0,0,.5);
+    border: solid #dadada 1px;
+    color: #fff;
+    font-size: large;
+    text-align: center;
+    border-radius: 10%;
+}
+.btn-enviar:hover{
+    border: #dadada;
+    color: #FFF;
+}
+
+.text-file{
+    text-align: center;
+    color: rgba(29, 29, 29, .3);
+}
+.drop-zone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-input{
+    display: grid;
+    grid-template-areas: "stack";
+    width: 20rem;
+    height: 8rem;
+    background-color: #EEEEEE;
+    border-radius: 4%;
+}
+.file-input > *{
+    grid-area: stack;
+}
+.file-input > input{
+    opacity: 0;
+}
+.file-input > .drop-zone{
+    margin: 1rem;
+    border: dashed 2px #AAAAAA;
+    border-radius: 5%;
+
+    transition: margin 200ms;
+}
+.file-input.active > .drop-zone{
+    margin: 1rem;
+    background-color: #dadada;
+}
+
+.result{
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    width: 20vw;
+    height: 3rem;
+    color: #FFF;
+    text-align: center;
+}
